@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My calculator</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="buttons">
+        <button class="number" onclick="appendToDisplay('7')">7</button>
+        <button class="number" onclick="appendToDisplay('8')">8</button>
+        <button class="number" onclick="appendToDisplay('9')">9</button>
+        <button class="operator" onclick="appendToDisplay('*')">*</button>
+
+        <button class="number" onclick="appendToDisplay('4')">4</button>
+        <button class="number" onclick="appendToDisplay('5')">5</button>
+        <button class="number" onclick="appendToDisplay('6')">6</button>
+        <button class="operator" onclick="appendToDisplay('-')">-</button>
+
+        <button class="number" id="number" onclick="appendToDisplay('1')">
+          1
+        </button>
+        <button class="number" id="number" onclick="appendToDisplay('2')">
+          2
+        </button>
+        <button class="number" id="number" onclick="appendToDisplay('3')">
+          3
+        </button>
+        <button class="operator" id="operator" onclick="appendToDisplay('+')">
+          +
+        </button>
+        <button class="equal" onclick="calculate()">=</button>
+       
+        
+        <button class="number" onclick="appendToDisplay('0')">0</button>
+        <button class="number" onclick="appendToDisplay('.')">.</button>
+        <button class="operator" onclick="appendToDisplay('/')">/</button>
+       
+
+        <button class="clear" onclick="clearAll()">C</button>
+        <button class="delete" onclick="deleteLast()">DEL</button>
+      </div>
+    </div>
+
+   <h2>Made by Sitra Sultan</h2>
+ <script src="js2.js"></script>
+   </body>
+</html>
